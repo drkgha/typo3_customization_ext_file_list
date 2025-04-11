@@ -1,0 +1,87 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<style>
+.file-breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  margin-bottom: 25px;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.file-breadcrumb li {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.file-breadcrumb li + li::before {
+  content: "›";
+  padding: 0 0.5em;
+  color: #888;
+}
+
+.file-breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+.file-breadcrumb a:hover {
+  color: #0056b3;
+}
+
+.file-breadcrumb li:last-child {
+  color: #000;
+  font-weight: bold;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.file-list li {
+  margin: 0;
+}
+
+.file-list a {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.file-list a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+.file-list a.folder::before {
+  content: "📁 ";
+}
+
+.file-list a.parent-folder::before {
+  content: "📁 ";
+}
+
+.file-list a.file::before {
+  content: "📄 ";
+}
+
+</style>
+
+<div class="tx-filelist">
+    <f:render section="Main"/>
+</div>
+
+</html>

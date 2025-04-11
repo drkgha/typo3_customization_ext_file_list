@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{breadcrumb}">
+    <f:render partial="Breadcrumb" arguments="{breadcrumb: breadcrumb, home: data.header}" />
+</f:if>
+
+<ul class="file-list">
+    <f:if condition="{parent}">
+        <f:render partial="Simple/ParentFolder" arguments="{folder: parent}" />
+    </f:if>
+    <f:for each="{folders}" as="folder">
+        <f:render partial="Simple/Folder" arguments="{folder: folder}" />
+    </f:for>
+    <f:for each="{files}" as="file">
+        <f:render partial="Simple/File" arguments="{file: file, newTimestamp: newTimestamp}" />
+    </f:for>
+</ul>
+
+</html>
