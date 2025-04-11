@@ -1,4 +1,4 @@
-This repository contains layout and template customizations for the TYPO3 extension **File List** by Xavier Perseguers.
+This repository contains layout and template customizations for the TYPO3 extension [File List](https://github.com/xperseguers/t3ext-file_list/) by [Xavier Perseguers](https://github.com/xperseguers).
 
 # 📸 Screenshot
 ![Image](https://github.com/user-attachments/assets/7a5f2ae1-444c-4caa-90fc-78e09e55dbac)
