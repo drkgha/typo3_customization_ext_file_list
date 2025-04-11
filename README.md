@@ -25,4 +25,4 @@ plugin.tx_filelist {
 
 3. Save the configuration and clear the caches.
 
-**Note: Customizations are included for the Simple Listing layout only.**
+⚠️ Note: Customizations are included for the **Simple Listing** layout only.
