@@ -1,5 +1,8 @@
 This repository contains layout and template customizations for the TYPO3 extension **File List** by Xavier Perseguers.
 
+# 📸 Screenshot
+![Image](https://github.com/user-attachments/assets/7a5f2ae1-444c-4caa-90fc-78e09e55dbac)
+
 # 🔧 Requirements
 * Typo3 *(Tested with TYPO3 v12.4)*
 * Installed and configured File List extension by Xavier Perseguers *(Tested with File List v3.2.0)*
